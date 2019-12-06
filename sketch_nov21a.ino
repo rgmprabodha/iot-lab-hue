@@ -100,17 +100,7 @@ void loop() {
       if(buttonState ==1)
         {
         Serial.println("button pressed");
-//        wifi_client.println("PUT /api/0KX7DYkM6LgQ2rDmuF3zr94QY5TrsYLAqWmeIGQN/lights/13/state HTTP/1.0");
-//        wifi_client.println("Host:  192.168.1.131");
-//        wifi_client.println("");
-//          wifi_client.print("{\"on\":true}");                         
-//        //wifi_client.println("Connection: close");
-//        //wifi_client.println("Content-Type: application/x-www-form-urlencoded");
-//        //wifi_client.println("Content-Length: 10\r\n");
-//       if (wifi_client.println() == 0) {
-//          Serial.println(F("Failed to send request"));
-//          //return;
-//        }
+        }
         if (wifi_client.connect(server, 80)) {
             Serial.println("connected to server");
             // Make a HTTP request:
